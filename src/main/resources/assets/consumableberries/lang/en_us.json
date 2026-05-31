@@ -1,0 +1,13 @@
+{
+  "itemGroup.consumableberries": "Example Mod Tab",
+  "block.consumableberries.example_block": "Example Block",
+  "item.consumableberries.example_item": "Example Item",
+
+  "consumableberries.configuration.title": "Consumable Berries Configs",
+  "consumableberries.configuration.section.consumableberries.common.toml": "Consumable Berries Configs",
+  "consumableberries.configuration.section.consumableberries.common.toml.title": "Consumable Berries Configs",
+  "consumableberries.configuration.items": "Item List",
+  "consumableberries.configuration.logDirtBlock": "Log Dirt Block",
+  "consumableberries.configuration.magicNumberIntroduction": "Magic Number Text",
+  "consumableberries.configuration.magicNumber": "Magic Number"
+}

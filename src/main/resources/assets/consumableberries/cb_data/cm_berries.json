@@ -1,0 +1,352 @@
+{
+  "cobblemon:oran_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:cheri_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:chesto_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:pecha_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:rawst_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:aspear_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:persim_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:razz_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:bluk_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:nanab_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:wepear_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:pinap_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:occa_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:passho_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:wacan_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:rindo_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:yache_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:chople_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:kebia_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:shuca_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:coba_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:payapa_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:tanga_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:charti_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:kasib_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:haban_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:colbur_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:babiri_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:chilan_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:roseli_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:leppa_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:lum_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:hopo_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:figy_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:iapapa_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:wiki_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:aguav_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:mago_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:sitrus_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:touga_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:cornn_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:magost_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:rabuta_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:nomel_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:spelon_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:pamtre_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:watmel_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:durin_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:belue_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:enigma_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:kee_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:maranga_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:pomeg_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:kelpsy_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:qualot_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:hondew_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:grepa_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:tamato_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:liechi_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:ganlon_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:petaya_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:apicot_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:salac_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:starf_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:lansat_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:micle_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:custap_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:jaboca_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:rowap_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  },
+  "cobblemon:eggant_berry": {
+    "alwaysEdible": true,
+    "nutrition": 1,
+    "saturationModifier": 2
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "package": "nl.codersquack.nicejs.ccb.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "HealingBerryItemMixin",
+    "LivingEntityMixin",
+    "PokemonAndMoveSelectingItemMixin",
+    "PokemonSelectingItemMixin",
+    "PortionHealingBerryItemMixin",
+    "PPRestoringBerryItemMixin",
+    "StatusCuringBerryItemMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
