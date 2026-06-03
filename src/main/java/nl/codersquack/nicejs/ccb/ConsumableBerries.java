@@ -6,8 +6,10 @@ import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.loading.FMLPaths;
@@ -15,6 +17,7 @@ import net.neoforged.neoforge.event.AddReloadListenerEvent;
 import net.neoforged.neoforge.event.ModifyDefaultComponentsEvent;
 import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
 import net.neoforged.neoforge.registries.*;
+import nl.codersquack.nicejs.ccb.effects.FreezingMobEffect;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -42,11 +45,29 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.Optional;
+import java.util.function.Consumer;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(ConsumableBerries.MODID)
 public class ConsumableBerries {
+    public static class BerryEffectContext {
+        private final LivingEntityUseItemEvent.Finish event;
+        private final BerryEffect effect;
+        public BerryEffectContext(LivingEntityUseItemEvent.Finish event, BerryEffect effect) {
+            this.event = event;
+            this.effect = effect;
+        }
+
+        public LivingEntityUseItemEvent.Finish getEvent() {
+            return event;
+        }
+
+        public BerryEffect getEffect() {
+            return effect;
+        }
+    }
     // Define mod id in a common place for everything to reference
     public static final String MODID = "consumableberries";
     // Directly reference a slf4j logger
@@ -76,6 +97,10 @@ public class ConsumableBerries {
                 output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
             }).build());*/
     public static final Gson gson = new Gson();
+    public static final HashMap<ResourceLocation, Consumer<BerryEffectContext>> specialEffects = new HashMap<>();
+    public static final DeferredRegister<MobEffect> MOB_EFFECTS = DeferredRegister.create(Registries.MOB_EFFECT, MODID);
+    public static final Object FREEZING_EFFECT = MOB_EFFECTS.register("freezing",
+            () -> new FreezingMobEffect(MobEffectCategory.HARMFUL, 0x000080));
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public ConsumableBerries(IEventBus modEventBus, ModContainer modContainer) {
@@ -99,6 +124,17 @@ public class ConsumableBerries {
             NeoForge.EVENT_BUS.unregister(sol_valheim_reforged.procedures.CanEatCheckProcedure.class);
             NeoForge.EVENT_BUS.register(CanEatCheckProcedureOverride.class);
         }
+        specialEffects.put(ResourceLocation.fromNamespaceAndPath(MODID, "set_fire"), (ctx) -> {
+            //LOGGER.info("it is i, the special effect");
+            LivingEntity entity = ctx.getEvent().getEntity();
+            entity.setSharedFlagOnFire(true);
+            entity.setRemainingFireTicks(ctx.getEffect().duration);
+        });
+        /*specialEffects.put(ResourceLocation.fromNamespaceAndPath(MODID, "set_freeze"), ctx -> {
+            LivingEntity entity = ctx.getEvent().getEntity();
+            //entity.setTicksFrozen(ctx.getEffect().duration);
+            entity.setIsInPowderSnow(true);
+        });*/
 
         // Register the item to a creative tab
         //modEventBus.addListener(this::addCreative);
@@ -108,7 +144,7 @@ public class ConsumableBerries {
         //modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
         // cobblemon:aspear_berry
         //Item item = BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("cobblemon", "aspear_berry"));
-
+        MOB_EFFECTS.register(modEventBus);
 
     }
     @EventBusSubscriber(modid = ConsumableBerries.MODID)
@@ -176,7 +212,8 @@ public class ConsumableBerries {
         if (ef == null) return;
         LivingEntity ent = event.getEntity();
         for (BerryEffect eff : ef) {
-            Optional<Holder.Reference<MobEffect>> omef = BuiltInRegistries.MOB_EFFECT.getHolder(ResourceLocation.parse(eff.id));
+            ResourceLocation rl = ResourceLocation.parse(eff.id);
+            Optional<Holder.Reference<MobEffect>> omef = BuiltInRegistries.MOB_EFFECT.getHolder(rl);
             if (eff.removeRandomEffect) {
                 /*for (Map.Entry<ResourceKey<MobEffect>, MobEffect> a : BuiltInRegistries.MOB_EFFECT.entrySet()) {
                     BuiltInRegistries.MOB_EFFECT.getHolderOrThrow(a.getKey());
@@ -188,14 +225,23 @@ public class ConsumableBerries {
                 ent.removeEffect(inst.getEffect());
                 continue;
             }
-            if (omef.isEmpty()) continue;
+            if (omef.isEmpty()) {
+                if (!specialEffects.containsKey(rl)) continue;
+                //LOGGER.info("calling special effect");
+                try {
+                    specialEffects.get(rl).accept(new BerryEffectContext(event, eff));
+                } catch(Throwable e) {
+                    LOGGER.error("Caught exception while executing special effect {}: ", rl, e);
+                }
+                continue;
+            }
 
             Holder<MobEffect> mef = omef.get();
             if (eff.duration == 0) {
                 ent.removeEffect(mef);
                 continue;
             }
-            MobEffectInstance inst = new MobEffectInstance(mef, eff.duration, eff.amplifier, false, eff.showParticles, true);
+            MobEffectInstance inst = new MobEffectInstance(mef, eff.duration, eff.amplifier, false, eff.showParticles, eff.showIcon);
             ent.addEffect(inst);
             //ent.addEffect()
         }

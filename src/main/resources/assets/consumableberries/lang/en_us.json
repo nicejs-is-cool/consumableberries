@@ -9,5 +9,7 @@
   "consumableberries.configuration.items": "Item List",
   "consumableberries.configuration.logDirtBlock": "Log Dirt Block",
   "consumableberries.configuration.magicNumberIntroduction": "Magic Number Text",
-  "consumableberries.configuration.magicNumber": "Magic Number"
+  "consumableberries.configuration.magicNumber": "Magic Number",
+
+  "effect.consumableberries.freezing": "Freezing"
 }
