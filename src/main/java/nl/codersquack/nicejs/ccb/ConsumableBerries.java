@@ -212,6 +212,13 @@ public class ConsumableBerries {
         if (ef == null) return;
         LivingEntity ent = event.getEntity();
         for (BerryEffect eff : ef) {
+            if (eff.chance != 100 && Minecraft.getInstance().level != null) {
+                int roll = Minecraft.getInstance().level.getRandom().nextInt(100);
+                //LOGGER.info("rolled {}", roll);
+                if (roll >= eff.chance) {
+                    continue;
+                }
+            }
             ResourceLocation rl = ResourceLocation.parse(eff.id);
             Optional<Holder.Reference<MobEffect>> omef = BuiltInRegistries.MOB_EFFECT.getHolder(rl);
             if (eff.removeRandomEffect) {
