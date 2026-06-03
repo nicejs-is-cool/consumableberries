@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "cobblemon:jaboca_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:rowap_berry",
+      "required": false
+    }
+  ]
+}

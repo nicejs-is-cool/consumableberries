@@ -1,13 +1,218 @@
 {
   "version": 0,
   "effects": {
-    "cobblemon:aspear_berry": [
+    "cobblemon:starf_berry": [
+      {
+        "id": "minecraft:glowing",
+        "amplifier": 1,
+        "duration": 400,
+        "showParticles": true,
+        "removeRandomEffect": false
+      }
+    ],
+    "cobblemon:nanab_berry": [
+      {
+        "id": "minecraft:slowness",
+        "amplifier": 1,
+        "duration": 200
+      }
+    ],
+    "cobblemon:kebia_berry": [
+      {
+        "id": "minecraft:poison",
+        "amplifier": 0,
+        "duration": 0
+      }
+    ],
+    "cobblemon:pecha_berry": [
+      {
+        "id": "minecraft:poison",
+        "amplifier": 0,
+        "duration": 0
+      }
+    ],
+    "cobblemon:salac_berry": [
+      {
+        "id": "minecraft:speed",
+        "amplifier": 1,
+        "duration": 200
+      }
+    ],
+    "cobblemon:liechi_berry": [
+      {
+        "id": "minecraft:strength",
+        "amplifier": 1,
+        "duration": 200
+      }
+    ],
+    "cobblemon:petaya_berry": [
+      {
+        "id": "minecraft:strength",
+        "amplifier": 2,
+        "duration": 200
+      }
+    ],
+    "cobblemon:hondew_berry": [
+      {
+        "id": "minecraft:weakness",
+        "amplifier": 1,
+        "duration": 200
+      }
+    ],
+    "cobblemon:kelpsy_berry": [
+      {
+        "id": "minecraft:weakness",
+        "amplifier": 1,
+        "duration": 200
+      }
+    ],
+    "cobblemon:figi_berry": [
+      {
+        "id": "minecraft:nausea",
+        "amplifier": 2,
+        "duration": 200,
+        "chance": 20
+      },
+      {
+        "id": "minecraft:instant_health",
+        "amplifier": 2,
+        "duration": 200
+      }
+    ],
+    "cobblemon:wiki_berry": [
+      {
+        "id": "minecraft:nausea",
+        "amplifier": 2,
+        "duration": 200,
+        "chance": 20
+      },
+      {
+        "id": "minecraft:regeneration",
+        "amplifier": 5,
+        "duration": 200
+      }
+    ],
+    "cobblemon:mago_berry": [
+      {
+        "id": "minecraft:nausea",
+        "amplifier": 2,
+        "duration": 200,
+        "chance": 20
+      },
+      {
+        "id": "minecraft:absorption",
+        "amplifier": 8,
+        "duration": 200
+      }
+    ],
+    "cobblemon:aguav_berry": [
+      {
+        "id": "minecraft:nausea",
+        "amplifier": 2,
+        "duration": 200,
+        "chance": 20
+      },
+      {
+        "id": "minecraft:absorption",
+        "amplifier": 4,
+        "duration": 200
+      }
+    ],
+    "cobblemon:iapapa_berry": [
+      {
+        "id": "minecraft:nausea",
+        "amplifier": 2,
+        "duration": 200,
+        "chance": 20
+      },
+      {
+        "id": "minecraft:absorption",
+        "amplifier": 8,
+        "duration": 200
+      }
+    ],
+    "cobblemon:rawst_berry": [
+      {
+        "id": "minecraft:fire_resistance",
+        "amplifier": 1,
+        "duration": 2400
+      }
+    ],
+    "cobblemon:occa_berry": [
+      {
+        "id": "consumableberries:set_fire",
+        "amplifier": 1,
+        "duration": 200
+      }
+    ],
+    "cobblemon:yache_berry": [
+      {
+        "id": "consumableberries:set_freeze",
+        "amplifier": 1,
+        "duration": 200
+      }
+    ],
+    "cobblemon:passho_berry": [
+      {
+        "id": "minecraft:water_breathing",
+        "amplifier": 1,
+        "duration": 200
+      }
+    ],
+    "cobblemon:chople_berry": [
+      {
+        "id": "minecraft:speed",
+        "amplifier": 2,
+        "duration": 150
+      }
+    ],
+    "cobblemon:shuca_berry": [
+      {
+        "id": "minecraft:jump_boost",
+        "amplifier": 1,
+        "duration": 200
+      }
+    ],
+    "cobblemon:coba_berry": [
+      {
+        "id": "minecraft:slow_falling",
+        "amplifier": 1,
+        "duration": 400
+      }
+    ],
+    "cobblemon:payapa_berry": [
       {
         "id": "minecraft:night_vision",
         "amplifier": 1,
-        "duration": 200,
-        "showParticles": true,
-        "removeRandomEffect": true
+        "duration": 1200
+      }
+    ],
+    "cobblemon:charti_berry": [
+      {
+        "id": "minecraft:haste",
+        "amplifier": 2,
+        "duration": 400
+      }
+    ],
+    "cobblemon:kasib_berry": [
+      {
+        "id": "minecraft:invisibility",
+        "amplifier": 1,
+        "duration": 800
+      }
+    ],
+    "cobblemon:hasban_berry": [
+      {
+        "id": "minecraft:strength",
+        "amplifier": 1,
+        "duration": 350
+      }
+    ],
+    "cobblemon:babiri_berry": [
+      {
+        "id": "minecraft:resistance",
+        "amplifier": 1,
+        "duration": 350
       }
     ]
   }

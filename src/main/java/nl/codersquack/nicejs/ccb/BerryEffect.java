@@ -6,6 +6,7 @@ public class BerryEffect {
     public int duration;
     public boolean showParticles;
     public boolean removeRandomEffect;
+    public int chance = 100;
     public BerryEffect() {
 
     }

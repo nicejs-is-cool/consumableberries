@@ -1,0 +1,130 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "cobblemon:starf_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:jaboca_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:rowap_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:occa_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:passho_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:chople_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:shuca_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:coba_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:payapa_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:charti_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:kasib_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:haban_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:babiri_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:haban_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:yache_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:occa_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:rawst_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:iapapa_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:aquav_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:mago_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:haban_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:wiki_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:figi_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:kelpsy_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:hondew_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:petaya_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:liechi_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:salac_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:pecha_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:kebia_berry",
+      "required": false
+    },
+    {
+      "id": "cobblemon:nanab_berry",
+      "required": false
+    }
+
+  ]
+}

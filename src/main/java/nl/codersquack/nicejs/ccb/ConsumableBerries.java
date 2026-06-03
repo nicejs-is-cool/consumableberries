@@ -8,6 +8,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.loading.FMLPaths;
 import net.neoforged.neoforge.event.AddReloadListenerEvent;
@@ -92,6 +93,11 @@ public class ConsumableBerries {
         // Note that this is necessary if and only if we want *this* class (ConsumableBerries) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+        //NeoForge.EVENT_BUS.unregister(sol_valheim);
+        if (ModList.get().isLoaded("sol_valheim_reforged")) {
+            LOGGER.info("Sol Valheim Reforged is present, applying CanEatCheckProcedure override!");
+            NeoForge.EVENT_BUS.unregister(sol_valheim_reforged.procedures.CanEatCheckProcedure.class);
+        }
 
         // Register the item to a creative tab
         //modEventBus.addListener(this::addCreative);
