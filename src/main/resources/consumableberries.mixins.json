@@ -3,6 +3,7 @@
   "package": "nl.codersquack.nicejs.ccb.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "FriendshipRaisingBerryItemMixin",
     "HealingBerryItemMixin",
     "LivingEntityMixin",
     "PokemonAndMoveSelectingItemMixin",
