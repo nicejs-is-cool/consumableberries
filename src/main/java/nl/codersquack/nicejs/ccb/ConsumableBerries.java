@@ -97,6 +97,7 @@ public class ConsumableBerries {
         if (ModList.get().isLoaded("sol_valheim_reforged")) {
             LOGGER.info("Sol Valheim Reforged is present, applying CanEatCheckProcedure override!");
             NeoForge.EVENT_BUS.unregister(sol_valheim_reforged.procedures.CanEatCheckProcedure.class);
+            NeoForge.EVENT_BUS.register(CanEatCheckProcedureOverride.class);
         }
 
         // Register the item to a creative tab

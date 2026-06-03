@@ -11,24 +11,24 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.living.LivingEntityUseItemEvent;
 import sol_valheim_reforged.procedures.CanEatCheckProcedure;
 
-@EventBusSubscriber
+//@EventBusSubscriber
 public class CanEatCheckProcedureOverride {
     @SubscribeEvent
     public static void onStartUseItem(LivingEntityUseItemEvent.Start event) {
         LivingEntity entity = event.getEntity();
         if (entity instanceof Player playerEntity) {
             ItemStack stack = event.getItem();
-            ConsumableBerries.LOGGER.info("CECP override");
+            //ConsumableBerries.LOGGER.info("CECP override");
             if (stack.getItem() instanceof PokemonAndMoveSelectingItem berryItem) {
-                ConsumableBerries.LOGGER.info("PAMSI override return");
+                //ConsumableBerries.LOGGER.info("PAMSI override return");
                 if (PSIHelper.INSTANCE.willInteractWithPokemon(playerEntity, stack, berryItem.getBagItem())) return;
             }
             if (stack.getItem() instanceof PokemonSelectingItem berryItem) {
-                ConsumableBerries.LOGGER.info("PSI override return");
+                //ConsumableBerries.LOGGER.info("PSI override return");
                 if (PSIHelper.INSTANCE.willInteractWithPokemon(playerEntity, stack, berryItem.getBagItem())) return;
             }
         }
-        ConsumableBerries.LOGGER.info("CECP start");
+        //ConsumableBerries.LOGGER.info("CECP start");
         CanEatCheckProcedure.onUseItemStart(event);
     }
 }
