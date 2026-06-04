@@ -1,6 +1,6 @@
 package nl.codersquack.nicejs.ccb;
 
-import net.minecraft.client.Minecraft;
+//import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;

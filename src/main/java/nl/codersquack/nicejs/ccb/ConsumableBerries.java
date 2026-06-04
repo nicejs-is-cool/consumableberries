@@ -1,7 +1,6 @@
 package nl.codersquack.nicejs.ccb;
 
 import com.google.gson.Gson;
-import net.minecraft.client.Minecraft;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.resources.ResourceLocation;
@@ -212,8 +211,8 @@ public class ConsumableBerries {
         if (ef == null) return;
         LivingEntity ent = event.getEntity();
         for (BerryEffect eff : ef) {
-            if (eff.chance != 100 && Minecraft.getInstance().level != null) {
-                int roll = Minecraft.getInstance().level.getRandom().nextInt(100);
+            if (eff.chance != 100) {
+                int roll = event.getEntity().getRandom().nextInt(100);
                 //LOGGER.info("rolled {}", roll);
                 if (roll >= eff.chance) {
                     continue;
@@ -227,7 +226,7 @@ public class ConsumableBerries {
                 }*/
                 Collection<MobEffectInstance> entityEffects = ent.getActiveEffects();
                 if (entityEffects.isEmpty()) continue;
-                int pickedEffect = Minecraft.getInstance().level.getRandom().nextInt(entityEffects.size());
+                int pickedEffect = event.getEntity().getRandom().nextInt(entityEffects.size());
                 MobEffectInstance inst = (MobEffectInstance) entityEffects.toArray()[pickedEffect];
                 ent.removeEffect(inst.getEffect());
                 continue;
